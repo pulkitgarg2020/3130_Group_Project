@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="right"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:verticalScrollbarPosition="right"
+    android:visibility="visible"
+    tools:context=".EmployerHomepage">
+
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="367dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="581dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <ListView
+        android:id="@+id/employeeList"
+        android:layout_width="405dp"
+        android:layout_height="311dp"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:scrollIndicators="right"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:smoothScrollbar="true"
+        android:verticalScrollbarPosition="right"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <TextView
+        android:id="@+id/employeeHeader"
+        android:layout_width="411dp"
+        android:layout_height="19dp"
+        android:clickable="false"
+        android:text="Available Workers In Your Area"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/employeeList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="addTaskSwitch"
+        android:text="Add Task"
+        app:layout_constraintBottom_toTopOf="@+id/employeeHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:onClick="homepageSwitch"
+        android:text="Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:theme="@android:style/Theme.Holo"
+        app:layout_constraintBottom_toTopOf="@+id/searchBar"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBanner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="323dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:background="#673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/searchBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

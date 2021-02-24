@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/employee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:barrierMargin="@dimen/cardview_compat_inset_shadow"
+    tools:context=".registrationForEmployers">
+
+    <EditText
+        android:id="@+id/business"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/BName"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="83dp"
+        android:text="Business Name"
+        app:layout_constraintEnd_toStartOf="@+id/business"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/business"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="213dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AddPayment"
+        app:layout_constraintTop_toBottomOf="@+id/business" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        android:drawablePadding="@dimen/cardview_default_radius"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/vpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/vpassword"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpassword"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/Password"
+        app:layout_constraintEnd_toStartOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/BName"
+        app:layout_constraintEnd_toStartOf="@+id/business"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        android:text="Phone"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toStartOf="@+id/vpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VPassword"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/VPassword"
+        app:layout_constraintEnd_toStartOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/VPassword"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        android:text="Verify Password"
+        app:layout_constraintBottom_toTopOf="@+id/Phone"
+        app:layout_constraintEnd_toStartOf="@+id/vpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/Username"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Employer" />
+
+    <Button
+        android:id="@+id/Employer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="277dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AddPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="211dp"
+        android:text="Add Paypal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BName" />
+
+    <Button
+        android:id="@+id/emp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="81dp"
+        android:text="Employee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
