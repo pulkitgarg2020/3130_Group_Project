@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a3130_group_6">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.CSCI.a3130_group_6">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -9,18 +25,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.3130_Group_6">
-        <activity android:name=".registrationForEmployees"></activity>
-        <activity android:name=".registrationHome" />
-        <activity android:name=".registrationForEmployers" />
-        <activity android:name=".EmployerHomepage" />
-        <activity android:name=".add_listing" />
-        <activity android:name=".loginPage">
+        <activity android:name=".EmployeePackage.EmployeeRatingEmployer"></activity>
+        <activity android:name=".EmployeePackage.EmployeeAcceptedListings" />
+        <activity android:name=".HelperClases.ShowApplication" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".HelperClases.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <activity android:name="com.CSCI.a3130_group_6.Listings.AddListingMap" />
+        <activity android:name="com.CSCI.a3130_group_6.EmployeePackage.EmployeeProfile" />
+        <activity android:name="com.CSCI.a3130_group_6.EmployeePackage.EmployeeHomepage" />
+        <activity android:name="com.CSCI.a3130_group_6.EmployerPackage.EmployerHomepage" />
+        <activity android:name="com.CSCI.a3130_group_6.Listings.ListingHistory" />
+        <activity android:name="com.CSCI.a3130_group_6.Listings.ListingApplicants" />
+        <activity android:name="com.CSCI.a3130_group_6.EmployerPackage.EmployerProfile" />
+        <activity android:name="com.CSCI.a3130_group_6.EmployeePackage.EmployeeView" />
+        <activity android:name="com.CSCI.a3130_group_6.Registration.RegistrationForEmployees" />
+        <activity android:name="com.CSCI.a3130_group_6.Registration.RegistrationHome" />
+        <activity android:name="com.CSCI.a3130_group_6.Registration.RegistrationForEmployers" />
+        <activity android:name="com.CSCI.a3130_group_6.Listings.AddListing" />
+        <activity android:name="com.CSCI.a3130_group_6.Listings.ListingDetails" />
+        <activity android:name="com.CSCI.a3130_group_6.Listings.EditEmployerListing"> </activity>
+        <activity android:name="com.CSCI.a3130_group_6.HelperClases.ImageCapture"/>
+        <activity android:name="com.CSCI.a3130_group_6.PayPal.PayActivity"/>
+        <activity android:name="com.CSCI.a3130_group_6.PayPal.PaymentStatus"/>
+        <activity android:name="com.CSCI.a3130_group_6.Registration.LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.CSCI.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

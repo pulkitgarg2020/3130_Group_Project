@@ -1,0 +1,119 @@
+19 January 2021  
+ 
+
+Group Introduction and experience with android shared  
+
+Discussed the project - Quick cash  
+
+Roles of scrum master and scrum guard  
+
+Assigned the roles and decided that roles would be rotated every week  
+
+User stories  
+
+Logging into the app - authentication  
+
+Wireframe theme - UI for the app that supports the control flow 
+
+As a user to enter a keyword and search for the people who can do the task  
+
+Registration page - wireframes created before  
+
+The database needed to store user’s information 
+
+Account page to check whether its an employer or an employee 
+
+A worker can add what task they can do 
+
+Different types of payment integration for the user to make the payment 
+
+Rate and review both user as well as the tasker  
+
+Notification if there is a new job that is posted and could be also for the user 
+
+Could be device-oriented  
+
+Could be emailed oriented  
+
+User should have the option to choose 
+
+Categorize the job - narrow down the job to a specific type  
+
+Put in your qualifications in your profile  
+
+If electrician then they should be certified  
+
+Would be hard to validate a certificate  
+
+User, as well as the tasker, could message each other on the app 
+
+Discussed if the project is going to be developed to be used in the real world or not 
+
+Question about if we switch to IoS development or is it strictly Android 
+
+Follow test-driven development  
+
+Before writing the functionality, write the test for the actual functionality  
+
+Show the testing by commits in Gitlab 
+
+Would have to put dummy user inputs and then check how the function would perform  
+
+Discussed that refactoring is not required 
+
+Discussed that if user stories are final  
+
+Client TA suggested to break the user stories further  
+
+2nd Iteration for user stories:  
+
+Sort in the urgency of the jobs  
+
+Put filters in the job listings and should be able to save those preferences 
+
+Validate all the user stories with the client TA. 
+
+As a technical client, they would like to know in detail about the user stories to know what exactly developers would be doing  
+
+Refining the user stories more: 
+
+As a user, we would need signup and a login button on the page 
+
+Client TA shared the link to the slides from the lecture to give the group an example on how to break the TA stories  
+
+Acceptance criteria which client should be satisfied with 
+
+Prioritize user experience in development  
+
+Setting up a meeting time for the next weeks 
+
+Good to have and must have  
+
+Must have - needed for basic requirements  
+
+Good to have - not necessarily important 
+
+Refine the user stories and get it validated by the user. 
+
+Question about making the user story really specific or break it down in detail  
+
+The client should be able to understand it simply but it should also be in the detail 
+
+Example of acceptance tests for the login page  
+
+After login test identify kind of user and then acceptance tests for following pages   
+
+Client TA gave the example about his own coop  
+
+The team discussed if they should discuss the user stories right now or later 
+
+Client TA gave what scope of help he can provide  
+
+ 
+ 
+
+Things to work on for the next meeting: 
+
+Refining the user stories 
+
+Study about user stories on our own 

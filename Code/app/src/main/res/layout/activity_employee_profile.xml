@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeePackage.EmployeeProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/seeResume"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Select Resume"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeStatusLabel" />
+
+        <EditText
+            android:id="@+id/applicantRadius"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employeeRadius"
+            app:layout_constraintTop_toBottomOf="@+id/applicantMessage" />
+
+        <TextView
+            android:id="@+id/employeeRating"
+            android:layout_width="267dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="36dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/applicantRadius" />
+
+        <EditText
+            android:id="@+id/applicantMessage"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/applicantRadius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/message"
+            app:layout_constraintTop_toBottomOf="@+id/applicantPhoneNum" />
+
+        <EditText
+            android:id="@+id/applicantPhoneNum"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employeePhoneNum"
+            app:layout_constraintTop_toBottomOf="@+id/applicantEmail" />
+
+        <TextView
+            android:id="@+id/employeeRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="11dp"
+            android:text="Working Radius"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/applicantRadius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message" />
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            android:text="Password"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/applicantMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeePhoneNum" />
+
+        <TextView
+            android:id="@+id/employeePhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="10dp"
+            android:text="Phone Number"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/applicantPhoneNum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeEmail" />
+
+        <EditText
+            android:id="@+id/applicantEmail"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="36dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/applicantPhoneNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employeeEmail" />
+
+        <TextView
+            android:id="@+id/employeeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="23dp"
+            android:text="Email"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/applicantEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeUserName" />
+
+        <TextView
+            android:id="@+id/applicantUserName"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/applicantEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employeeUserName"
+            app:layout_constraintTop_toBottomOf="@+id/applicantName" />
+
+        <TextView
+            android:id="@+id/employeeUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="15dp"
+            android:text="Username"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/applicantUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeName" />
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="99dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="261dp"
+            android:background="@android:drawable/ic_menu_gallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/employeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="1dp"
+            android:text="Name"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/employeeUserName"
+            app:layout_constraintEnd_toStartOf="@+id/applicantName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+        <EditText
+            android:id="@+id/applicantName"
+            android:layout_width="272dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/applicantUserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employeeName"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageButton" />
+
+        <Button
+            android:id="@+id/uploadResume"
+            android:layout_width="167dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:text="Upload Resume"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeStatusLabel" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="151dp"
+            android:text="Save Updates"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.639"
+            app:layout_constraintStart_toEndOf="@+id/seeResume"
+            app:layout_constraintTop_toBottomOf="@+id/uploadResume" />
+
+        <Button
+            android:id="@+id/profileImageButton"
+            android:layout_width="67dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="10dp"
+            app:icon="@android:drawable/ic_menu_camera"
+            app:layout_constraintBottom_toTopOf="@+id/employeeName"
+            app:layout_constraintEnd_toStartOf="@+id/applicantName"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/employeeName"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/employeeStatusLabel"
+            android:layout_width="355dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:textAlignment="center"
+            android:textColor="#E60D0D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.357"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ClientIDInput" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="45dp"
+            android:text="Rating"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeRadius" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="46dp"
+            android:text="Client ID"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/ClientIDInput"
+            android:layout_width="280dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employeeRating" />
+
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="968dp"
+            android:text="pay"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/refreshBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

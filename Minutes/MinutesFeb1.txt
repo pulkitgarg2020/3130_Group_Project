@@ -1,0 +1,7 @@
+February 01, 2021
+
+Ty Fetinko, Alex Ingram
+
+Worked on tests for Registration page, created the XML for page
+
+3hrs

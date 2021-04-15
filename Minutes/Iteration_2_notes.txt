@@ -1,0 +1,47 @@
+View listings from (db) for homepage
+- retrieve data (complex)
+- display data
+
+Editing Tasks
+
+Employer
+- add/edit/remove picture
+- add/edit/remove existing listing
+ - separate screen w listing history
+ - closed/open status
+ - location
+- listings should show all applied employees
+ - select worker -> notify employee -> open communication
+ - accept + open chat requests
+
+Employee
+- display listings (based on location preferences)
+ - place to add location (if not already added)
+ - select working radius
+ - images + descriptions
+ - apply + contact buttons
+  - resume stuff
+- sort by urgency + location
+
+Employer Profile
+- business name
+- business address
+- wireframe
+
+Employee Profile
+- resume upload place
+- wireframe
+
+Messaging Functionality
+- wireframe
+
+Logout/Login Functionality
+- logout
+- secure password
+- check if username in use
+
+Location Service (dynamic)
+
+remove duplicate gitlab issues
+
+14 user stories

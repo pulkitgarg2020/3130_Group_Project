@@ -1,0 +1,12 @@
+Meeting minutes Jan 26
+
+Members present: Pulkit, Emily, Bryson
+
+Focus Tasks:
+Designed + Adapted all wireframes
+-Registration
+-Login
+-Employer Listing
+-Ad Listing
+
+1hr

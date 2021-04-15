@@ -3,15 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginPage" >
+    tools:context="com.CSCI.a3130_group_6.Registration.LoginPage" >
 
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="109dp"
         android:layout_above="@+id/userNameEt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="coverImage"
         android:src="@drawable/login_image" />
 
@@ -34,10 +33,11 @@
         android:hint="password"
         android:textColorHint="@android:color/darker_gray"
         android:background="#ffffff"
-        android:layout_marginBottom="24dp"
-         android:layout_above="@+id/loginBt_employee"
+        android:layout_marginBottom="5dp"
+         android:layout_above="@+id/registerBt"
         android:layout_marginTop="3dp"
         android:paddingLeft="15dp"
+        android:inputType="textPassword"
 
         />
 
@@ -45,9 +45,9 @@
         android:id="@+id/loginBt_employee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/registerBt"
+        android:layout_above="@+id/loginBt_employer"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:layout_marginRight="12dp"
         android:onClick="onClick"
         android:text="login as Employee"
@@ -58,11 +58,10 @@
         android:id="@+id/loginBt_employer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/registerBt"
+        android:layout_above="@+id/loginStatus"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="12dp"
-        android:layout_marginBottom="-109dp"
         android:onClick="onClick"
         android:text="Login as Employer"
         android:textColor="#ffffff"
@@ -75,7 +74,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:onClick="onClick"
-        android:layout_above="@+id/loginStatus"
+        android:layout_above="@+id/loginBt_employee"
         android:text="registration"
         android:textSize="20sp"
         android:textColor="#ffffff"
@@ -89,8 +88,8 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom = "true"
         android:gravity="center"
-        android:layout_marginBottom="300dp"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="60dp"/>
 
 
 

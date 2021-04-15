@@ -1,0 +1,23 @@
+Jan 27 meeting minutes
+
+Discussed wireframes
+-employer putting in company name when registering (indivdual or company dropdown)
+-fields of employment/business
+
+payment aspect->two options directly link or input card information
+make a note in the user stories about payment 
+
+User Story regarding homepage needs engineering tasks re-done
+
+User story regarding price,date,urgency needs Engineering task AT 2 to be broken down more
+
+Make Tasks more specific (shouldn't have to explain to developer what's needed)
+
+We need to determine a datasbase.
+
+Teams were given user stories.
+
+Meeting this weekend to discuss database.
+
+ 
+

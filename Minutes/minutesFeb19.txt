@@ -1,0 +1,39 @@
+Feb 19, 2021
+
+Iteration 1:
+
+Pros: - Communication
+      - Dedication to working together
+
+Cons: - Merging
+      - Overly complicated story and tasks
+      - Trouble integrating Mustafa's part to project
+
+Moving forward:
+      - More refactoring
+      - Clean-up the code
+      - Create and refine user stories
+      - Add/remove pictures to post
+      - Editing an existing post
+      - need screen for listing history
+      - location for employer and employee
+      - Apply and contact buttons for employee
+      - Messaging between employer and employee
+      - Logout button
+      - ~14 user stories
+      - Acceptance tests and engineering tasks for user stoires
+      - Wireframes for iteration 2
+
+What was done: -Discussed what to improve for iteration 2
+	       -Closed gitlab issues in iteration 1
+	       -Iteration 2 started Feb 19th
+               -Created some user stories for iteration 2
+
+1.5 hrs
+
+Taken by Alex Ingram
+
+	       
+
+
+

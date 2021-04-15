@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="taskList" type="id" />
+    <item name="homeButton" type="id" />
+    <item name="Employee" type="id" />
+    <item name="bUploadImage" type="id" />
+    <item name="bDownloadedImage" type="id" />
+    <item name="etloadImageName" type="id" />
+    <item name="etDownloadName" type="id" />
+    <item name="image_view" type="id" />
+    <item name="capture_image_btn" type="id" />
+    <item name="Image" type="id" />
+    <item name="downloadedImage" type="id" />
+</resources>

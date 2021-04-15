@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_listing">
+    tools:context="com.CSCI.a3130_group_6.Listings.AddListing">
+
 
     <TextView
         android:id="@+id/TaskDescription"
@@ -19,10 +20,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TaskTitle" />
+        app:layout_constraintTop_toBottomOf="@id/viewTitle" />
 
     <TextView
-        android:id="@+id/urgency"
+        android:id="@+id/viewUrgency"
         android:layout_width="116dp"
         android:layout_height="38dp"
         android:layout_marginStart="40dp"
@@ -37,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/TaskDescription" />
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/viewDate"
         android:layout_width="116dp"
         android:layout_height="38dp"
         android:layout_marginStart="40dp"
@@ -49,10 +50,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/urgency" />
+        app:layout_constraintTop_toBottomOf="@id/viewUrgency" />
 
     <TextView
-        android:id="@+id/pay"
+        android:id="@+id/viewPay"
         android:layout_width="116dp"
         android:layout_height="38dp"
         android:layout_marginStart="40dp"
@@ -64,14 +65,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/date" />
+        app:layout_constraintTop_toBottomOf="@id/viewDate" />
 
     <TextView
         android:id="@+id/image"
         android:layout_width="116dp"
         android:layout_height="38dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="322dp"
         android:text="Add Image"
         android:textAlignment="center"
@@ -79,16 +80,73 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pay" />
+        app:layout_constraintTop_toBottomOf="@id/viewPay" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@+id/payInput"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/add_locationBt"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Add location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <Button
+        android:id="@+id/submitTask"
+        android:layout_width="151dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="80dp"
+        android:text="Submit Task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/currentLocationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/submitTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toEndOf="@+id/add_locationBt"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.125" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="112dp"
         android:layout_height="70dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/TaskTitle"
+        app:layout_constraintBottom_toTopOf="@+id/viewTitle"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -96,10 +154,10 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="299dp"
-        android:layout_height="75dp"
+        android:layout_width="251dp"
+        android:layout_height="67dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="2dp"
         android:text="Quick Cash"
         android:textSize="30sp"
@@ -109,11 +167,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TaskTitle"
+        android:id="@+id/viewTitle"
         android:layout_width="116dp"
         android:layout_height="35dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="322dp"
         android:text="Task Title"
         android:textAlignment="center"
@@ -124,96 +182,81 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/enterDate"
+        android:id="@+id/dateInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toEndOf="@+id/date"
-        app:layout_constraintTop_toBottomOf="@+id/inputUrgency" />
-
-    <Button
-        android:id="@+id/submitTask"
-        android:layout_width="151dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="150dp"
-        android:text="Submit Task"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButton" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/viewDate"
+        app:layout_constraintTop_toBottomOf="@+id/urgencyInput" />
 
     <EditText
-        android:id="@+id/inputTaskTitle"
+        android:id="@+id/titleInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/inputTaskDescription"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/TaskTitle"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/viewTitle"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/inputTaskDescription"
+        android:id="@+id/descriptionInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/inputUrgency"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@id/TaskDescription"
-        app:layout_constraintTop_toBottomOf="@id/inputTaskTitle" />
+        app:layout_constraintTop_toBottomOf="@id/titleInput" />
 
     <EditText
-        android:id="@+id/inputUrgency"
+        android:id="@+id/urgencyInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@id/urgency"
-        app:layout_constraintTop_toBottomOf="@id/inputTaskDescription" />
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@id/viewUrgency"
+        app:layout_constraintTop_toBottomOf="@id/descriptionInput" />
 
     <EditText
-        android:id="@+id/inputPay"
+        android:id="@+id/payInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toEndOf="@id/pay"
-        app:layout_constraintTop_toBottomOf="@id/enterDate" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/viewPay"
+        app:layout_constraintTop_toBottomOf="@id/dateInput" />
 
     <TextView
         android:id="@+id/statusLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="131dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="131dp"
         android:layout_marginBottom="51dp"
         android:textColor="#F40606"
@@ -223,19 +266,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/submitTask"
         app:layout_constraintVertical_bias="0.627" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
-        app:layout_constraintStart_toEndOf="@id/image"
-        app:layout_constraintTop_toBottomOf="@+id/inputPay"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

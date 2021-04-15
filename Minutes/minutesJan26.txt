@@ -1,0 +1,10 @@
+11:30 am -1pm
+
+Ty,Alex,Han,Mustafa, and Bryson met to discuss engineering tasks.
+
+Ty:Helped with engineering stories
+Alex:Helped with engineering stories
+Mustafa:Helped with engineering stories
+Han:Helped with engineering testing
+Bryson:Submitted wireframes for home and login. Supposed with engineering testing
+

@@ -1,0 +1,20 @@
+January 31, 2021
+
+Alex Ingram, Bryson Sullivan-Farrell(Scrum King), Mustafa Ali, Ty Fetinko, Han Yang
+
+Scrum Master: Ty Fetinko
+Scrum Guard: Alex Ingram
+
+Worked on the UML design
+
+Discussed database
+- What tables are needed
+- What attributes are needed
+- Connections between tables
+- Looked at online resources to learn NOSQL
+
+Next meetings: Refine engineering tasks, complete UML diagram
+
+
+
+
